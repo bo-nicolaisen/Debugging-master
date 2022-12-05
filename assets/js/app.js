@@ -2,7 +2,8 @@
 ---------------------------------------------------------------------------------------------------------------*/
 
 // "let imgSrc" VÆLGER ELEMENTERNE: "IMG" I GALLERY: ("getElementsByTagName")
-let imgSrc = document.getElementsByTagName("img");
+let imgSrc = document.getElementsByClassName("galleryImage");
+
 
 //SKIFTER SRC (STIEN) UD PÅ: "#imgLarge" MED "DEN FRA "imgsrc" / (foreach element)? XD
 let imgCon = document.querySelector("#imgLarge");

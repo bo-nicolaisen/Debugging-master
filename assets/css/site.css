@@ -131,6 +131,11 @@ button{
 
 /* galleri css*/
 
+
+.galleryImage{
+    cursor: pointer;
+}
+
 .gallery {
     background-color: #515355;
     color:   #ffffff;
