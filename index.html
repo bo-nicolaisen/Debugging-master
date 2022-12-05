@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JS Debugging</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script src="/assets/js/app.js" async defer></script>
+  </head>
+  <body>
+
+    <main class="content">
+
+  
+    <header class="centerMe">
+      <img src="/assets/images/debug.png" />
+      <h1>DEBUGGING</h1>
+    </header>
+
+    <section class="formSection centerMe">
+      <h2>Form</h2>
+
+      <form>
+        <label for="navn">Navn:</label><br />
+        <input
+          type="text"
+          id="nameInput"
+          name="name"
+          value=""
+          placeholder="indtast navn"
+        /><br />
+
+        <label for="email">Last name:</label><br />
+        <input
+          type="text"
+          id="emailInput"
+          name="email"
+          value=""
+          placeholder="indtast e-mail"
+        /><br />
+
+        <div id="feedBackElement">Indtast navn og E-mail.</div>
+
+        <button id="submitButt">Indsend</button>
+      </form>
+    </section>
+
+    <section class="gallery centerMe">
+      <h2>Gallery</h2>
+      <img id="imgLarge" src="/assets/images/Uploads/Uploads-09.png" />
+
+      <section class="galleryGrid">
+        <img src="/assets/images/Uploads/Uploads-01.png" />
+        <img src="/assets/images/Uploads/Uploads-02.png" />
+        <img src="/assets/images/Uploads/Uploads-03.png" />
+        <img src="/assets/images/Uploads/Uploads-04.png" />
+        <img src="/assets/images/Uploads/Uploads-05.png" />
+        <img src="/assets/images/Uploads/Uploads-06.png" />
+        <img src="/assets/images/Uploads/Uploads-07.png" />
+        <img src="/assets/images/Uploads/Uploads-08.png" />
+      </section>
+    </section>
+
+    <section class="centerMe modalSection">
+      <h2>Cookie politik</h2>
+      <p>Cookie politik er typisk noget man gerne vil have i et modal vindue. Men et modal vindue kan også indeholde andre elementer.</p>
+
+      <button id="cookieButt">vis politik</button>
+
+      <section id="cookieModal" class="modal-content">
+        
+        <span id="closeModal">
+          <h2>Hvad er en cookie?</h2>
+          <p>
+            En cookie er en lille tekstfil, som vi gemmer på din computer for at
+            kunne holde styr på, hvad der sker under dit besøg og for at kunne
+            genkende computeren. En cookie er ikke et program og indeholder ikke
+            virus.
+          </p>
+
+          <h2>Hjemmesidens brug af cookies</h2>
+          <p>
+            Cookies er nødvendige for at få hjemmesiden til at fungere. Cookies
+            hjælper os desuden med at få overblik over dit besøg på hjemmesiden,
+            så vi løbende kan optimere og målrette hjemmesiden til dine behov og
+            interesser. Cookies husker fx, hvad du har lagt i indkøbskurven, om
+            du tidligere har besøgt siden, og om du er logget ind. Nødvendige
+            cookies Disse cookies er påkrævet for, at hjemmesiden kan levere en
+            tjeneste, som slutbrugeren udtrykkelig har anmodet om. Det kan
+            f.eks. være cookies, der bruges for at få en indkøbskurv til at
+            virke. Nedenstående er kun eksempler Hjemmesidens indhold er lagret
+            og administreres gennem Sitecore platform. Den sætter cookies, som
+            bruges til at genkende dig, når du bevæger dig rundt på siden og
+            huske om du fx er logget ind i på hjemmesiden. Vi bruger FDIHs
+            cookiescript til at finde ud af, hvorvidt du er blevet informeret om
+            hjemmesidens brug af cookies. FDIH lagrer ingen data i forbindelse
+            med disse cookies. Præference- cookies Disse cookies bruges til at
+            sikre den optimale brugeroplevelse på hjemmesiden.Der indsamles
+            ingen personligt identificerbare data med denne type cookies.
+            Drifts- og optimeringscookies Disse cookies anvendes til driften af
+            hjemmesiden. Det kan f.eks. være optælling af antallet af besøgende
+            eller andre informationer, der skal bruges til analyse. De bruges
+            også i forbindelse med spørgeskemaer. Disse cookies kan i begrænset
+            omfang indsamle data, der kan henføres til den enkelte bruger. Vi
+            bruger Google Analytics og Google Adwords til at analysere, hvordan
+            brugerne anvender hjemmesiden. De oplysninger, som cookien indsamler
+            om din brug (trafikdata, herunder din IP-adresse), sendes til og
+            gemmes på en server. Marketing - anonym tracking på tværs af
+            hjemmesider Disse cookies anvendes til at følge brugere på tværs af
+            deres besøg på flere hjemmesider. Disse cookies kan bruges til at
+            opbygge profiler, der viser, hvilke søgninger hver bruger har
+            foretaget eller hvilke sider, de har besøgt. Disse cookies kan lagre
+            data, der identificerer den enkelte bruger eller som indeholder
+            specifik information om brugeren. Anonyme data kan blive delt med 3.
+            part. Cookies fra Adform bruges til at evaluere online kampagner.
+            Cookies fra Facebook bruges til at vise en "Del på Facebook" knap.
+          </p>
+
+          <h2>Detaljerede Cookie informationer</h2>
+          <p>
+            Navn Forklaring JSESSIONID WCS interne cookies til at styre session
+            WC_SESSION_ESTABLISHED WCS interne cookies til at styre session
+            WC_ACTIVEPOINTER WCS interne cookies til at styre session
+            WC_PERSISTENT WCS interne cookies til at styre session
+            WC_USERACTIVITY_ WCS interne cookies til at styre session
+            WC_AUTHENTICATION_ WCS interne cookies til at styre session
+            WC_REMEMBER_ID_BK2 Bruges til at huske brugernavn og login
+            informationer WC_REMEMBER_ME_USER_BK2 Bruges til at huske brugernavn
+            og login informationer WC_REMEMBER_ME_PASS_BK2 Bruges til at huske
+            brugernavn og login informationer
+          </p>
+
+          <h2>Sådan afviser eller sletter du dine cookies</h2>
+          <p>
+            Afvisning af cookies Du kan altid afvise cookies på din computer ved
+            at ændre indstillingerne i din browser. Hvor du finder
+            indstillingerne afhænger af, hvilken browser du anvender. Du skal
+            dog være opmærksom på, at hvis du gør det, er der mange funktioner
+            og services, du ikke kan bruge, fordi de forudsætter, at hjemmesiden
+            kan huske de valg, du foretager. Sletning af cookies Cookies som du
+            tidligere har accepteret, kan efterfølgende slettes nemt. Benytter
+            du en PC med en nyere browser, kan du slette dine cookies ved at
+            bruge genvejstasterne: CTRL + SHIFT + Delete Virker genvejstasterne
+            ikke, og/eller benytter du en MAC, skal du starte med at finde ud
+            af, hvilken browser du bruger og herefter klikke pÃ¥ det relevante
+            link: Husk: Bruger du flere browsere, skal du slette cookies i dem
+            alle. Internet Explorer Mozilla Firefox Google Chrome Opera Safari
+            Flash cookies (gælder alle browser) iPhone, iPad og andet fra Apple
+            Telefoner med styresystemet Android Telefoner med Windows 7
+          </p>
+
+          <h2>Spørgsmål og klagevejledning</h2>
+          <p>
+            Har du spørgsmål?<br />
+            Har du kommentarer eller spørgsmål i forbindelse med vores
+            information og/eller behandling af personlige oplysninger, er du
+            velkommen til at kontakte os på tlf. 70 11 00 33 eller
+            gyldendal@gyldendal.dk. Sådan kan du klage over hjemmesidens
+            information om cookies Hjemmesiden er en del af Foreningen for Dansk
+            Internet Handels (FDIH) cookiemærke, og hvis du som bruger mener, at
+            hjemmesiden ikke overholder cookie-reglerne, kan du derfor rette din
+            klage til FDIH. Du skal sende din klage til FDIH på kontakt@fdih.dk.
+            Inden du sender din klage til FDIH skal følgende forudsætninger være
+            opfyldt: Du har forinden klaget direkte til den ansvarlige for den
+            pågældende hjemmeside med en udførlig beskrivelse af, hvor og hvad
+            hjemmesiden ikke overholder den danske vejledning. Din klage er
+            blevet afvist eller forholdet ikke er afhjulpet senest 30
+            arbejdsdage efter modtagelse af klagen. Opfylder du ovenstående
+            krav, skal du sende din klage til FDIH på kontakt@fdih.dk.
+          </p>
+
+          <h2>Klagen skal indeholde:</h2>
+          <p>
+            Dit navn <br />
+            Din adresse<br />
+            Din e-mail<br />
+            Dit telefonnummer<br />
+            Hjemmesidens www adresse<br />
+            Detaljeret beskrivelse af klagens indhold<br />
+            Dokumentation for tidligere klage til hjemmesiden<br />
+            FDIH vil herefter behandle din klage inden for rimelig tid. Får du
+            medhold, bliver cookiemærket frataget hjemmesiden.
+          </p>
+        </span>
+      </section>
+    </section>
+
+ 
+
+    <footer class="centerMe">
+      <h2></h2>
+    </footer>
+    </main>
+
+
+   
+  </body>
+</html>
